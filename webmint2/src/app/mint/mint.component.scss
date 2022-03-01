@@ -1,0 +1,39 @@
+img {
+  height: 600px;
+  margin-top: -100px;
+}
+
+.submit {
+  cursor: pointer;
+  border-radius: 5em;
+  text-decoration: none;
+  color: #fff;
+  background: linear-gradient(to right, #9C27B0, #E040FB);
+  border: 0px solid rgb(71, 67, 197);
+  background: linear-gradient(126deg, #915ede 22%, #e2028f 67%, #e29502 98%);
+  font-size: 25px;
+  letter-spacing: 2.4px;
+  font-family: 'Helvetica', 'Arial', sans-serif;
+  font-weight: bold;
+  margin-left: 20px;
+  padding: 10px;
+  height: 100%;
+  width: 30%;
+  box-shadow: 0 0 20px 1px rgba(0, 0, 0, 0.04);
+}
+
+.address {
+  margin-top: 20px;
+  color: grey;
+  font-weight: bold;
+}
+
+input {
+  background: transparent;
+  border: 0.5px solid white;
+  text-align: center;
+  border-radius: 5rem;
+  width: 20%;
+  font-size: 40px;
+  color: white
+}

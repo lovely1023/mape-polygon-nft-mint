@@ -1,0 +1,45 @@
+<section id="mint" style="margin-top: 15rem">
+  <div>
+    <div class="row align-items-center text-white">
+      <div class="col-md-6 mb-3 text-center">
+        <h1 class="text-center">
+          <span>
+            <img src="/assets/metaangeldao.gif">
+          </span>
+        </h1>
+      </div>
+      <div class="col-md-6 text-center mb-3" style="margin-top: -200px;">
+        <div class="row">
+          <div class="col-12">
+            <h1 class="fw-bold">Meta Angel DAO NFT</h1>
+          </div>
+          <div class="col-12">
+            <h5>A seat on our investor board</h5>
+          </div>
+          <div class="col-12" style="margin-top: 50px">
+            <h4><b>Presale: </b> 0.8 ETH + Gas</h4>
+          </div>
+          <div class="col-12 mt-2">
+            <h4><b>Public sale: </b> 1 ETH + Gas</h4>
+          </div>
+          <div class="col-12 text-center" style="margin-top: 80px">
+            <a class="submit mt-3" type="button" href="https://metamask.io/" *ngIf="!metamaskInstalled">
+              Install MetaMask
+            </a>
+            <button class="submit" type="button" (click)="loginWithMetaMask()"
+              *ngIf="metamaskInstalled && !userAddress">
+              Connect with MetaMask
+            </button>
+            <kendo-numerictextbox *ngIf="metamaskInstalled && userAddress" [(ngModel)]="total" format="#" [min]="0"
+              [max]="100" [autoCorrect]="true" [decimals]="0">
+            </kendo-numerictextbox>
+            <button class="submit" type="button" (click)="mint()" *ngIf="metamaskInstalled && userAddress">
+              MINT
+            </button>
+            <div class="address" *ngIf="userAddress">ETH Wallet Address: {{userAddress}}</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
